@@ -26,7 +26,7 @@ groq_client = Groq(
 models = groq_client.models.list()
 ids = [item.id for item in  models.data]
 
-default_model = "llama-3.2-90b-text-preview"
+default_model = "llama-3.2-90b-vision-preview"
 
 # initialize Microagent client
 client = Microagent(llm_type='groq')
